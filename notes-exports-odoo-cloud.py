@@ -3,10 +3,10 @@ import csv
 from datetime import datetime
 
 # 🔐 Paramètres de connexion à Odoo
-url = "https://votre-domaine.odoo.com"  # Remplacez par votre URL
+url = "https://votre-domaine.odoo.com"   # Remplacez par votre URL
 db = "votre_base_de_donnees"             # Remplacez par votre base
 username = "votre.email@domaine.com"     # Remplacez par votre identifiant
-password = "votre_mot_de_passe"          # Remplacez par votre mot de passe
+password = "api-token"                   # Remplacez par votre token d'API Odoo Cloud
 
 # 📡 Connexion aux endpoints XML-RPC
 common = xmlrpc.client.ServerProxy(f"{url}/xmlrpc/2/common")
